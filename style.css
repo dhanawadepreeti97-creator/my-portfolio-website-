@@ -1,0 +1,165 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:content-box;
+}
+
+
+header{
+    background:#358f7d;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 60px;
+}
+
+nav a{
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    margin-left: 25px;
+}
+
+.hero{
+    display: flex;
+    height: 80vh;
+}
+
+.image{
+    width: 50%;
+}
+
+.image img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center top;
+}
+
+.content-section{
+    width: 50%;
+    background: #eef4f2;
+    padding: 80px;
+}
+
+.content-section h2{
+    color: #e68a62;
+    font-size: 50px;
+    margin: 20px;
+
+}
+
+.content-section p{
+    color: #2f7f6f;
+    font-size: 28px;
+    line-height: 1.5;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+section{
+    padding: 80px 100px;
+}
+
+section h2{
+    color: #e38b65;
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+
+section p,
+section li{
+    color: #2f7f6f;
+    font-size: 28px;
+    line-height: 1.6;
+}
+
+section ul{
+    padding-left: 30px;
+}
+
+#about,
+#skills,
+#contact{
+    background-color: #eef4f2;
+}
+
+#education,
+#projects{
+    background-color: white;
+}
+
+#education table{
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+#education th{
+    background-color: #2f7f6f;
+    color: white;
+    padding: 15px;
+    font-size: 20px;
+}
+
+#education td{
+    padding: 15px;
+    font-weight: bold;
+    background-color: #a5d1c9;
+    border: 1px solid #ddd;
+    color: #2f7f6f;
+    font-size: 18px;
+    text-align: center;
+}
+
+.project-container{
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+
+.project-card{
+    background-color: white;
+    width: 300px;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    transition: 0.3s;
+}
+
+.project-card h3{
+    color: #e38b65;
+    margin-bottom: 15px;
+}
+
+.project-card p{
+    color: #2f7f6f;
+    font-size: 18px;
+}
+
+.project-card:hover{
+    transform: translateY(-10px);
+}
+
+footer{
+    background-color: #2f7f6f;
+    color: white;
+    text-align: left;
+    padding: 50px;
+    margin:20px;
+}
+
+
+footer a{
+    color: #e38b65;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+footer a:hover{
+    text-decoration: underline;
+}
