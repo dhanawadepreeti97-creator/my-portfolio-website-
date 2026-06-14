@@ -1,7 +1,7 @@
 *{
     margin:0;
     padding:0;
-    box-sizing:content-box;
+    box-sizing:border-box;
 }
 
 
@@ -162,4 +162,115 @@ footer a{
 
 footer a:hover{
     text-decoration: underline;
+}
+
+/* Mobile Responsive design */
+
+@media screen and (max-width: 768px){
+
+    header{
+        flex-direction: column;
+        padding: 20px;
+        text-align: center;
+    }
+
+    nav{
+        margin-top: 15px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    nav a{
+        margin-left: 0;
+    }
+
+    .hero{
+        flex-direction: column;
+        height: auto;
+    }
+
+    .image,
+    .content-section{
+        width: 100%;
+    }
+
+    .image img{
+        height: 350px;
+    }
+
+    .content-section{
+        padding: 30px 20px;
+        text-align: center;
+    }
+
+    .content-section h2{
+        font-size: 32px;
+        margin: 10px 0;
+    }
+
+    .content-section p{
+        font-size: 18px;
+    }
+
+    section{
+        padding: 40px 20px;
+    }
+
+    section h2{
+        font-size: 32px;
+    }
+
+    section p,
+    section li{
+        font-size: 18px;
+    }
+
+    #education{
+        overflow-x: auto;
+    }
+
+    #education table{
+        min-width: 600px;
+    }
+
+    .project-container{
+        justify-content: center;
+    }
+
+    .project-card{
+        width: 100%;
+        max-width: 350px;
+    }
+
+    footer{
+        text-align: center;
+        margin: 0;
+        padding: 30px 20px;
+    }
+}
+
+    @media screen and (max-width: 768px){
+
+    /* other responsive code */
+
+    #education{
+        overflow-x: auto;
+    }
+
+    #education table{
+        min-width: 600px;
+    }
+
+}
+
+    #education table{
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+#education{
+    overflow-x: auto;
 }
