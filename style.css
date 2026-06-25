@@ -23,18 +23,27 @@ nav a{
 
 .hero{
     display: flex;
-    height: 80vh;
+    align-items: center;
+    justify-content: center;
+    min-height: 80vh;
 }
 
 .image{
     width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
 }
 
 .image img{
-    height: 100%;
-    width: 100%;
+    width: 350px;
+    height: 350px;
     object-fit: cover;
     object-position: center top;
+    border-radius: 50%;
+    border: 5px solid #358f7d;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
 }
 
 .content-section{
@@ -164,7 +173,6 @@ footer a:hover{
     text-decoration: underline;
 }
 
-/* Mobile Responsive design */
 
 @media screen and (max-width: 768px){
 
@@ -191,13 +199,14 @@ footer a:hover{
         height: auto;
     }
 
-    .image,
-    .content-section{
-        width: 100%;
+    .image{
+    width: 100%;
+    padding: 20px;
     }
 
-    .image img{
-        height: 350px;
+   .image img{
+    width: 220px;
+    height: 220px;
     }
 
     .content-section{
@@ -206,12 +215,15 @@ footer a:hover{
     }
 
     .content-section h2{
-        font-size: 32px;
-        margin: 10px 0;
+    color: #e68a62;
+    font-size: 42px;
+    margin-bottom: 20px;
     }
 
     .content-section p{
-        font-size: 18px;
+    color: #2f7f6f;
+    font-size: 24px;
+    line-height: 1.7;
     }
 
     section{
